@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Macondo', cursive;
+}
+
+body{
+    background-image: url(IMG_1664.JPG);
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(255, 255, 255, 0.774);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    margin-right: auto;
+    color:rgb(197, 107, 125);
+    text-decoration: none;
+    font-weight: 600;
+    pointer-events: none;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+}
+
+#home {
+    width: 46px;
+    height: 44px;
+    font-size: 25px;
+    color:rgb(197, 107, 125);
+    text-decoration: none;
+    font-weight: 600;
+    pointer-events: none;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 18px;
+    color: rgb(197, 107, 125);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i))
+}
+
+.navbar a:hover {
+    background: linear-gradient(45deg, #D74177, #FFE98A);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content {
+    max-width: 700px;
+}
+
+.home-content h1 {
+    font-size: 85px;
+    font-weight: 700;
+    line-height: 1.2;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h3 {
+    font-size: 42px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-sci a {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1.8s;
+}
+
+.home-sci a:hover {
+    background: linear-gradient(45deg, #ffffff, #d8d8d8);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.image img {
+    max-width: 800px;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2.1s, 3.1s;
+}
+
+/* Keyframes Animation */
+@keyframes slideTop {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+       transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+     }
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-24px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

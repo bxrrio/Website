@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art</title>
+    <link rel="stylesheet" href="art2.css">
+</head>
+<body>
+  <header class="header">
+    <img id="home" src="image0.png" width="1" height="1">
+    <a href="#" class="logo">BerriO</a>
+
+    <!--This is the navigation bar-->
+    <nav class="navbar">
+        <a href="berri.o.html" style="--i:1" class="active">Home</a>
+        <a href="Art.html" style="--i:2">Art</a>
+        <a href="Animations.html" style="--i:3">Animations</a>
+        <a href="About.html" style="--i:4">About</a>
+    </nav>
+  </header>
+
+  <section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><h2>ART GALLERY</h2>
+  </section>
+
+  <section>
+  <div class="full-img" id="fullImgBox">
+    <img src="IMG_1640.JPG" id="fullImg">
+    <span onclick="closeFullImg()">X</span>
+  </div>
+ <!--A list of my drawings that I have done this past year-->
+  <div class="img-gallery">
+    <img src="IMG_1640.JPG" onclick="openFullImg(this.src)" alt="drawing of friend">
+    <img src="IMG_1641.JPG" onclick="openFullImg(this.src)" alt="drawing of friend">
+    <img src="IMG_1652.JPG" onclick="openFullImg(this.src)" alt="letting go">
+    <img src="IMG_1646.JPG" onclick="openFullImg(this.src)" alt="self-portrait">
+    <img src="IMG_1649.JPG" onclick="openFullImg(this.src)" alt="playing games">
+    <img src="IMG_1639.JPG" onclick="openFullImg(this.src)" alt="self-doubt">
+    <img src="IMG_1642.JPG" onclick="openFullImg(this.src)" alt="drawing of friend">
+    <img src="IMG_1643.JPG" onclick="openFullImg(this.src)" alt="drawing of friend">
+    <img src="IMG_1645.JPG" onclick="openFullImg(this.src)" alt="Toxic people">
+    <img src="IMG_1648.JPG" onclick="openFullImg(this.src)" alt="self-doubt part 2">
+    <img src="IMG_1647.JPG" onclick="openFullImg(this.src)" alt="flowers">
+    <img src="IMG_1650.JPG" onclick="openFullImg(this.src)" alt="procrastination">
+    <img src="IMG_1651.JPG" onclick="openFullImg(this.src)" alt="social anxiety">
+    <img src="IMG_1653.JPG" onclick="openFullImg(this.src)" alt="dancing with money">
+    <img src="IMG_1654.JPG" onclick="openFullImg(this.src)" alt="split personalities">
+    <img src="IMG_1655.JPG" onclick="openFullImg(this.src)" alt="girl that is chilling">
+    <img src="IMG_1656.JPG" onclick="openFullImg(this.src)" alt="drawing of original character">
+    <img src="image3.jpeg" onclick="openFullImg(this.src)" alt="Deku from My Hero Academia">
+    <img src="image4.jpeg" onclick="openFullImg(this.src)" alt="silly cat">
+    <img src="image6.jpeg" onclick="openFullImg(this.src)" alt="drawing of original character">
+    <img src="IMG_1644.JPG" onclick="openFullImg(this.src)" alt="genshin impact Venti">
+    <img src="IMG_1659.jpg" onclick="openFullImg(this.src)" alt="wolf girl">
+    <img src="IMG_1660.jpg" onclick="openFullImg(this.src)" alt="barista cat girl">
+    <img src="image0.jpeg" onclick="openFullImg(this.src)" alt="boy that is scared">
+    <img src="image1.jpeg" onclick="openFullImg(this.src)" alt="2 friends having a picnic">
+    <img src="image2.jpeg" onclick="openFullImg(this.src)" alt="2 characters with determination">
+    <img src="IMG_1657.JPG" onclick="openFullImg(this.src)" alt="fight scene between 2 friends">
+    <img src="image5.jpeg" onclick="openFullImg(this.src)" alt="A person smoking">
+  </div>
+
+<script>
+
+  var fullImgBox = document.getElementById("fullImgBox");
+  var fullImg = document.getElementById("fullImg");
+
+  function openFullImg(pic){
+    fullImgBox.style.display = "flex";
+    fullImg.src = pic;
+  }
+
+  function closeFullImg(){
+    fullImgBox.style.display = "none"
+  }
+
+</script>
+
+</section>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Macondo', cursive;
+}
+
+body{
+    background-image: url(IMG_1664.JPG);
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(255, 255, 255, 0.774);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    margin-right: auto;
+    color:rgb(197, 107, 125);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#home {
+    width: 46px;
+    height: 44px;
+    font-size: 25px;
+    color:rgb(197, 107, 125);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 18px;
+    color: rgb(197, 107, 125);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a:hover {
+    background: linear-gradient(45deg, #D74177, #FFE98A);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.img-gallery {
+    width: 80%;
+    margin: 40px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px
+}
+
+.img-gallery img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.img-gallery img:hover{
+    transform: scale(0.8);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px white;
+}
+
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.full-img img{
+    width: 90%;
+    max-width: 500px;
+}
+
+.full-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
